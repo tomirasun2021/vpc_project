@@ -11,10 +11,5 @@ module "VPC" {
 
   tags = {
     Name        = "VPC_Project"
-    Environment = "Dev"
-    Team        = "DevOps"
-    Department  = "Operations"
-    Bill        = "CFO"
-    Quarter     = "1"
   }
 }
