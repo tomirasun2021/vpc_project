@@ -46,8 +46,8 @@ Then create public and private subnets in each AZs
 
 **For public subnets**
 
-   resource "aws_subnet" "public1" {
-	vpc_id = aws_vpc.main.id
+  1.  resource "aws_subnet" "public1" {
+  2.  vpc_id = aws_vpc.main.id
 	cidr_block = var.public_cidr1
 	availability_zone = data.aws_availability_zones.available.names[0]
 	map_public_ip_on_launch = true
@@ -180,6 +180,6 @@ resource "aws_route_table_association" "public3" {
 # vpc_project
 team2
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NDQxNzA0OSwtMTM0NjQ5OTAyMCw0Nz
+eyJoaXN0b3J5IjpbLTE0NzE4MTYyOCwtMTM0NjQ5OTAyMCw0Nz
 g4Mzg5NjFdfQ==
 -->
