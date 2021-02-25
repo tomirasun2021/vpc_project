@@ -33,12 +33,9 @@ Create a VPC The really first stage for bootstrapping an AWS account    is to cr
 
   
 
- resource "aws_vpc" "main" {
-
+resource "aws_vpc" "main" {
  cidr_block = var.cidr_block
-
 tags = var.tags
-
 }
 
   
@@ -172,6 +169,6 @@ Then create public and private subnets in each AZs
 # vpc_project
 team2
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNDM3NzczNiwtMTM0NjQ5OTAyMCw0Nz
-g4Mzg5NjFdfQ==
+eyJoaXN0b3J5IjpbNzY2NDM4MTc2LC0xMzQ2NDk5MDIwLDQ3OD
+gzODk2MV19
 -->
