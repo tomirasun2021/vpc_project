@@ -84,7 +84,7 @@ Then create public and private subnets in each AZs
     31.  cidr_block  = "${var.public_cidr_block3}"
     32.  tags  = "${var.tags}"
     33.  }
-
+For private subnet
 
 **3. Create internet and nat Gateways**
 
@@ -171,6 +171,6 @@ Then create public and private subnets in each AZs
 # vpc_project
 team2
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMzU5Mjk0MiwtMTM0NjQ5OTAyMCw0Nz
+eyJoaXN0b3J5IjpbMTE4MzU1MTc0NSwtMTM0NjQ5OTAyMCw0Nz
 g4Mzg5NjFdfQ==
 -->
