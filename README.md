@@ -31,10 +31,15 @@ less common or more advanced commands.
 
 Create a VPC The really first stage for bootstrapping an AWS account    is to create a VPC    (https://www.terraform.io/docs/providers/aws/r/vpc.html)
 
-      1.  resource "aws_vpc" "main" {
-      2.    cidr_block = "${var.cidr_block}"
-      3.    tags       = "${var.tags}"
-      4. }
+  
+
+ resource "aws_vpc" "main" {
+
+ cidr_block = var.cidr_block
+
+tags = var.tags
+
+}
 
   
 **2. Create public and private Subnets**
@@ -167,5 +172,6 @@ Then create public and private subnets in each AZs
 # vpc_project
 team2
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDY0OTkwMjAsNDc4ODM4OTYxXX0=
+eyJoaXN0b3J5IjpbLTcwNDM3NzczNiwtMTM0NjQ5OTAyMCw0Nz
+g4Mzg5NjFdfQ==
 -->
