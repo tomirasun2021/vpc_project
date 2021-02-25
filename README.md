@@ -46,44 +46,89 @@ Then create public and private subnets in each AZs
 
 **For public subnets**
 
-    1.  resource "aws_subnet" "subnet1" {
-    2.  vpc_id = "${aws_vpc.main.id}"
-    3.  cidr_block = "${var.private_cidr_block1}"
-    4.  tags = "${var.tags}"
-    5.  }
+ 1. 
+ 2. resource "aws_subnet" "public1" {
+        
+        vpc_id = aws_vpc.main.id
+        
+        cidr_block = var.public_cidr1
+        
+        availability_zone = data.aws_availability_zones.available.names[0]
+        
+        map_public_ip_on_launch = true
+        
+        tags = var.tags
+        
+        }
+        
+        resource "aws_subnet" "public2" {
+        
+        vpc_id = aws_vpc.main.id
+        
+        cidr_block = var.public_cidr2
+        
+        availability_zone = data.aws_availability_zones.available.names[1]
+        
+        map_public_ip_on_launch = true
+        
+        tags = var.tags
+        
+        }
+        
+        resource "aws_subnet" "public3" {
+        
+        vpc_id = aws_vpc.main.id
+        
+        cidr_block = var.public_cidr3
+        
+        availability_zone = data.aws_availability_zones.available.names[2]
+        
+        map_public_ip_on_launch = true
+        
+        tags = var.tags
+        
+        }
+        
+        resource "aws_route_table" "r" {
+        
+        vpc_id = aws_vpc.main.id
+        
+        route {
+        
+        cidr_block = "0.0.0.0/0"
+        
+        gateway_id = aws_internet_gateway.gw.id
+        
+        }
+        
+        tags = var.tags
+        
+        }
+        
+        resource "aws_route_table_association" "public1" {
+        
+        subnet_id = aws_subnet.public1.id
+        
+        route_table_id = aws_route_table.r.id
+        
+        }
+        
+        resource "aws_route_table_association" "public2" {
+        
+        subnet_id = aws_subnet.public2.id
+        
+        route_table_id = aws_route_table.r.id
+        
+        }
+        
+        resource "aws_route_table_association" "public3" {
+        
+        subnet_id = aws_subnet.public3.id
+        
+        route_table_id = aws_route_table.r.id
+        
+        }
 
-    6.  resource "aws_subnet" "subnet2" {
-    7.  vpc_id = "${aws_vpc.main.id}"
-    8.  cidr_block = "${var.private_cidr_block2}"
-    9.  tags = "${var.tags}"
-    10.  }
-    
-    11.  resource "aws_subnet" "subnet3" {
-    12.  vpc_id = "${aws_vpc.main.id}"
-    13.  cidr_block = "${var.private_cidr_block3}"
-    14.  tags = "${var.tags}"
-    15.  }
-    
-    16.  resource "aws_subnet" "subnet101" {
-    17.  vpc_id  = "${aws_vpc.main.id}"
-    18.  map_public_ip_on_launch = true
-    19.  cidr_block  = "${var.public_cidr_block1}"
-    20.  tags  = "${var.tags}"
-    21.  }
-    
-    22.  resource "aws_subnet" "subnet102" {
-    23.  vpc_id  = "${aws_vpc.main.id}"
-    24.  map_public_ip_on_launch = true
-    25.  cidr_block  = "${var.public_cidr_block2}"
-    26.  tags  = "${var.tags}"
-    27.  }
-    
-    28.  resource "aws_subnet" "subnet103" {
-    29.  vpc_id  = "${aws_vpc.main.id}"
-    30.  map_public_ip_on_launch = true
-    31.  cidr_block  = "${var.public_cidr_block3}"
-    32.  tags  = "${var.tags}"
-    33.  }
     
 **For private subnets**
 
@@ -172,6 +217,6 @@ Then create public and private subnets in each AZs
 # vpc_project
 team2
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NTYyODA2NCwtMTM0NjQ5OTAyMCw0Nz
-g4Mzg5NjFdfQ==
+eyJoaXN0b3J5IjpbMjE0NDc0NDE2LC0xMzQ2NDk5MDIwLDQ3OD
+gzODk2MV19
 -->
