@@ -42,7 +42,7 @@ module "three-tier" {
   private_cidr2 = "10.0.2.0/24"
   private_cidr3 = "10.0.3.0/24"
   tags = {
-    Name    = "VPC"
+    Name    = "vpc-project"
     Team    = "Fail Fast"
    
   }
@@ -76,7 +76,7 @@ output "region" {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTY2NTUwODEsLTEyMjY5NzAwOTgsLT
-EyMjc1NjA5NzksLTIwMzgzMTczMzYsNzY5ODY2NjYsLTYxMjEz
-OTQ3MV19
+eyJoaXN0b3J5IjpbMTcxNDI1MjQxOSwtMjAxNjY1NTA4MSwtMT
+IyNjk3MDA5OCwtMTIyNzU2MDk3OSwtMjAzODMxNzMzNiw3Njk4
+NjY2NiwtNjEyMTM5NDcxXX0=
 -->
