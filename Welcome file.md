@@ -38,38 +38,18 @@ Create a VPC The really first stage for bootstrapping an AWS account is to creat
 4. }
 ```
 
-**2. Create public and private Subnets**
 
-Then create public and private subnets in each AZs
-(https://www.terraform.io/docs/providers/aws/r/subnet.html)
 
-**For public subnets**
 
-  
 
- 1. resource "aws_subnet" "public1" {
-            vpc_id = aws_vpc.main.id
-        	cidr_block = var.public_cidr1
-        	availability_zone = data.aws_availability_zones.available.names[0]
-        	map_public_ip_on_launch = true
-        	tags = var.tags
-        }
-        
-        resource "aws_subnet" "public2" {
-        	vpc_id = aws_vpc.main.id
-        	cidr_block = var.public_cidr2
-        	availability_zone = data.aws_availability_zones.available.names[1]
-        	map_public_ip_on_launch = true
-        	tags = var.tags
-        }
-        resource "aws_subnet" "public3" {
-        	vpc_id = aws_vpc.main.id
-        	cidr_block = var.public_cidr3
-        	availability_zone = data.aws_availability_zones.available.names[2]
-        	map_public_ip_on_launch = true
-        	tags = var.tags
-        }
+
+
+
+
+
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgyNDc3NDY4LC02MTIxMzk0NzFdfQ==
+eyJoaXN0b3J5IjpbNzY5ODY2NjYsLTYxMjEzOTQ3MV19
 -->
