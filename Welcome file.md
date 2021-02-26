@@ -27,7 +27,8 @@ These types of resources are supported:
     
 *Terraform version: 0.14*
 
-**Used to  create a VPC**
+# **[  
+terraform-aws-vpc](https://github.com/husneozmen/terraform-aws-vpc)**
 
 
 
@@ -35,12 +36,20 @@ These types of resources are supported:
 
 
 
+
+
+
+
+
+
+
+### Get the output
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzgzMTczMzYsNzY5ODY2NjYsLTYxMj
-EzOTQ3MV19
+eyJoaXN0b3J5IjpbLTg2OTI5MzQxOCwtMjAzODMxNzMzNiw3Nj
+k4NjY2NiwtNjEyMTM5NDcxXX0=
 -->
