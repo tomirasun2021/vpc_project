@@ -27,8 +27,7 @@ These types of resources are supported:
     
 *Terraform version: 0.14*
 
-# **[  
-terraform-aws-vpc](https://github.com/husneozmen/terraform-aws-vpc)**
+    ***terraform-aws-vpc***
 
 
 
@@ -50,6 +49,6 @@ terraform-aws-vpc](https://github.com/husneozmen/terraform-aws-vpc)**
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2OTI5MzQxOCwtMjAzODMxNzMzNiw3Nj
-k4NjY2NiwtNjEyMTM5NDcxXX0=
+eyJoaXN0b3J5IjpbLTExMTkzNjMwNTUsLTIwMzgzMTczMzYsNz
+Y5ODY2NjYsLTYxMjEzOTQ3MV19
 -->
