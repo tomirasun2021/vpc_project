@@ -21,9 +21,10 @@ These types of resources are supported:
     
 -   [Internet Gateway](https://www.terraform.io/docs/providers/aws/r/internet_gateway.html)
     
-ml)
     
 -   [NAT Gateway](https://www.terraform.io/docs/providers/aws/r/nat_gateway.html)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5ODk0MjIyNV19
+eyJoaXN0b3J5IjpbLTYxMjEzOTQ3MV19
 -->
