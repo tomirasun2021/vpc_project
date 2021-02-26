@@ -29,9 +29,6 @@ These types of resources are supported:
 
 **Used to  create a VPC**
 
-  
-
-
 
 
 
@@ -44,6 +41,6 @@ These types of resources are supported:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzAzOTM5OTgsNzY5ODY2NjYsLTYxMj
+eyJoaXN0b3J5IjpbLTIwMzgzMTczMzYsNzY5ODY2NjYsLTYxMj
 EzOTQ3MV19
 -->
