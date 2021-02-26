@@ -31,7 +31,7 @@ These types of resources are supported:
 
 ## terraform-aws-vpc
 ```
-module "three-tier" {
+module "vpc-project" {
   source        = "../"
   region        = "us-east-1"
   cidr_block    = "10.0.0.0/16"
@@ -42,7 +42,7 @@ module "three-tier" {
   private_cidr2 = "10.0.2.0/24"
   private_cidr3 = "10.0.3.0/24"
   tags = {
-    Name    = "vpc"
+    Name    = "VPC"
     Team    = "Fail Fast"
    
   }
@@ -55,16 +55,16 @@ module "three-tier" {
 
 ```
 output "vpc_id" {
-    value = module.three-tier.vpc
+    value = module.vpc-project.vpc
 }
 output "public" {
-    value = module.three-tier.public_subnets
+    value = module.vpc-project.public_subnets
 }
 output "private" {
-    value = module.three-tier.private_subnets
+    value = module.vpc-project.private_subnets
 }
 output "region" {
-    value = module.three-tier.region
+    value = module.vpc-project.region
 }
 ```
 
@@ -76,7 +76,7 @@ output "region" {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjU3Mzk0NjUsLTIwMTY2NTUwODEsLT
-EyMjY5NzAwOTgsLTEyMjc1NjA5NzksLTIwMzgzMTczMzYsNzY5
-ODY2NjYsLTYxMjEzOTQ3MV19
+eyJoaXN0b3J5IjpbNDcyMzk2MDMsLTE2NjU3Mzk0NjUsLTIwMT
+Y2NTUwODEsLTEyMjY5NzAwOTgsLTEyMjc1NjA5NzksLTIwMzgz
+MTczMzYsNzY5ODY2NjYsLTYxMjEzOTQ3MV19
 -->
