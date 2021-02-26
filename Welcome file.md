@@ -27,6 +27,16 @@ These types of resources are supported:
     
 *Terraform version: 0.14*
 
+**1. Create a VPC**
+
+Create a VPC The really first stage for bootstrapping an AWS account is to create a VPC ([https://www.terraform.io/docs/providers/aws/r/vpc.html](https://www.terraform.io/docs/providers/aws/r/vpc.html))
+
+```
+1. resource "aws_vpc" "main" {
+2. cidr_block = var.cidr_block
+3. tags = var.tags
+4. }
+```
 
 
 
@@ -41,5 +51,5 @@ These types of resources are supported:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjE5NjA3NzYsLTYxMjEzOTQ3MV19
+eyJoaXN0b3J5IjpbNzY5ODY2NjYsLTYxMjEzOTQ3MV19
 -->
