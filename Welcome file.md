@@ -24,7 +24,22 @@ These types of resources are supported:
     
 -   [NAT Gateway](https://www.terraform.io/docs/providers/aws/r/nat_gateway.html)
 
+    
+*Terraform version: 0.14*
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMjEzOTQ3MV19
+eyJoaXN0b3J5IjpbLTE2MjE5NjA3NzYsLTYxMjEzOTQ3MV19
 -->
